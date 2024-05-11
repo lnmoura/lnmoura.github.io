@@ -15,7 +15,7 @@
         <meta http-equiv="pragma" content="no-cache"/>
 
         <!-- Set the title bar of the page -->
-        <title>Created with GameMaker</title>
+        <title>Dia das Mães 2024</title>
 
         <!-- Custom PreStyle code is injected here -->
         
@@ -28,12 +28,6 @@
                 margin: 0px;
                 padding: 0px;
                 border: 0px;
-				-webkit-touch-callout:none;
-                -webkit-user-select:none;
-                -khtml-user-select:none;
-                -moz-user-select:none;
-                -ms-user-select:none;
-                user-select:none;outline:0;
             }
 
             canvas {
@@ -44,22 +38,14 @@
                 margin: 0px;
                 padding: 0px;
                 border: 0px;
-				-webkit-touch-callout:none;
-                -webkit-user-select:none;
-                -khtml-user-select:none;
-                -moz-user-select:none;
-                -ms-user-select:none;
-                user-select:none;
-                outline:0;
-                -webkit-tap-highlight-color:rgba(255,255,255,0);
             }
             :-webkit-full-screen #canvas {
-                width: 60%;
-                height: 60%;
+                width: 100%;
+                height: 100%;
             }
             :-webkit-full-screen {
-                width: 60%;
-                height: 60%;
+                width: 100%;
+                height: 100%;
             }
             
             /* Custom Runner Styles */
@@ -86,12 +72,6 @@
             div.gm4html5_login_header {
                 text-align: center;
             }
-			.gm4html5_div_class {
-			  display: flex;
-			  align-items: center;
-			  justify-content: center;
-			  height: 100vh;
-			}
             /* END - Custom Runner Styles */
             
         </style>
@@ -113,22 +93,16 @@
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             
             <!-- Builtin injector for splash screen -->
-              <script>
-                document.addEventListener('touchstart', e => {
-                    e.preventDefault();
-                }, { passive: false })
-
-				document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=' + (1 / window.devicePixelRatio) + ', maximum-scale=1.0, user-scalable=0');
-            </script>
+            
 
             <!-- Create the canvas element the game draws to -->
-            <canvas id="canvas" width="1920" height="1080" >
+            <canvas id="canvas" width="1920" height="1080" style="position: absolute; top: 50%; left: 50%; bottom: -50%; right: -50%; transform: translate(-50%, -50%);">
                 <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
         </div>
 
         <!-- Run the game code -->
-        <script type="text/javascript" src="html5game/Para Mamãe.js?cachebust=676832504"></script>
+        <script type="text/javascript" src="html5game/Para Mamãe.js?cachebust=1072918435"></script>
 
         <!-- Builtin injector for injecting runner path -->
         
